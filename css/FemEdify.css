@@ -139,3 +139,88 @@ a:hover{
     transform:scale(1.2);
     color:aliceblue;
 }
+
+
+.formfeed{
+  margin-top:10px;
+  padding:30px;
+  background-color: #85007e;
+}
+.btn34{
+  text-decoration: none !important;
+    outline: none !important;
+    background-color: rgb(0, 0, 0);
+    color:#de0b9c;
+    padding:2px 40px 2px 40px;
+    font-weight: bolder;
+}
+
+
+form .btn button{
+  height: 100%;
+  border: 1px;
+  width: 100%;
+  border-radius: 50px;
+  outline: none;
+  background:  #221c2b;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover{
+  background: #5c618f;
+  transform: scale(0.93);
+  transition: 0.7s;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  outline: none;
+  color: white;
+  background: #27222f;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+  border: 0px;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: visible;
+  border: 0px;
+}
+.footer_section {
+  width: 100%;
+  float: left;
+  background-color: #252525;
+  height: auto;
+  padding-bottom: 50px;
+  box-shadow: 0px 24px 19px -1px #222223;
+  position: relative;
+}
+
+.footer_logo {
+  width: 80%;
+  float: left;
+  padding: 0px 0px 30px 0px;
+}
