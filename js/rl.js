@@ -65,7 +65,7 @@
 
         google.maps.event.addListener(marker, 'click', function () {
             alert(place.name);
-            window.open(place.direction.getUrl(), "_blank");
+            window.open(place.photos[0].getUrl(), "_blank");
         });
     }
 

@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <title>SheShield</title>
+      <title>HerNewHome</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -18,12 +18,14 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5GdFRCacJeNBSlvYi_Uw4LSrMpKr1UYI&libraries=places"></script>
+    
    </head>
    <body>
-
+      <script src="js/rl.js"></script>
       <div class="header_section">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="logo"><a href="Home.html"><img src="images/logo.png"></a></div>
+            <div class="logo"><a href="Home.html"><img src="images/a-logo.gif"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,36 +54,17 @@
          </nav>
       </div>
       
-      <div class="news_section layout_padding">
-         <div class="container">
-            <h1 class="health_taital">Why choose 24hr home care</h1>
-            <p class="health_text">labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <div class="news_section_2 layout_padding">
-               <div class="row">
-                  <div class="col-lg-4 col-sm-6">
-                     <div class="box_main">
-                        <div class="icon_1"><img src="images/icon-2.png"></div>
-                        <h4 class="daily_text">Daily care experts</h4>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                     <div class="box_main active">
-                        <div class="icon_1"><img src="images/icon-3.png"></div>
-                        <h4 class="daily_text_1">Available 24/7</h4>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-6">
-                     <div class="box_main">
-                        <div class="icon_1"><img src="images/icon-4.png"></div>
-                        <h4 class="daily_text_1">Balanced care</h4>
-                     </div>
-                  </div>
-               </div>
+      <div class="client_section layout_padding" style="position: relative; padding: 30px 100px 30px 100px;">
+         <div id="my_slider" class="carousel slide" data-ride="carousel" style="position: relative;">
+            <h2 style="text-align: center;"><b>Enter Your location</b></h2>
+            <input style=" width: 100%; margin-bottom: 20px;" id="searchTextField1" type="text" size="50">      
+            <div id="map1" style="height: 70vh; border-radius: 10px;">
             </div>
-            <div class="getquote_bt"><a href="#">Get A Quote <span><img src="images/right-arrow.png"></span></a></div>
+           
          </div>
       </div>
       
+     
       <div class="footer_section layout_padding">
          <div class="container">
             <div class="row">
@@ -123,7 +106,7 @@
          </div>
       </div>
       
-
+      <script src="js/ss.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
