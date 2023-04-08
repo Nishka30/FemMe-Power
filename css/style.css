@@ -365,8 +365,21 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #252525;
+    color: #8f4c7f;
     margin: 0px;
+    font-size:20px;
+    font-weight: bolder;
+   
+}
+.health_text1 {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #252525;
+    margin-left:800px;
+    font-size:30px;
+    font-weight: bolder;
+   color:rgb(137, 50, 96);
 }
 
 .health_section_2 {
@@ -488,17 +501,18 @@ button {
 .knowledge_section {
     width: 100%;
     float: left;
-    background-image: url(../images/gif26.gif);
+    background-image: url(../images/AGENCI-SouthSoudan-1-ANIM-long-3.gif);
     background-size: 100%;
-    height: auto;
+    height: 90vh;
     background-repeat: no-repeat;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .knowledge_main {
     width: 100%;
     float: left;
+    margin-top:110px;
 }
 
 .left_main {
@@ -515,16 +529,18 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
-    font-weight: bold;
+    color: #813d09;
+    font-weight: bolder;
 }
 
 .knowledge_text {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: #6d0f0f;
     margin: 0px;
+    margin-right:80px;
+    font-weight:bold;
 }
 
 .play_icon {
@@ -532,6 +548,7 @@ button {
     float: left;
     position: relative;
     z-index: 5;
+    margin-left:50px;
 }
 
 .play_icon::before {
@@ -679,20 +696,22 @@ button {
 }
 
 .icon_main {
-    width: 100%;
+   
     display: flex;
     padding-top: 50px;
+    padding-left:10px;
 }
 
 .icon_7 {
     width: 20%;
-    float: left;
+    margin-left:10px;
+   float:left;
 }
 
 .diabetes_text {
     width: 70%;
     float: left;
-    font-size: 30px;
+    font-size: 20px;
     color: #040101;
     font-weight: 500;
 }
@@ -801,10 +820,12 @@ button {
 }
 
 .client_img {
-    width: 80%;
-    margin: 0 auto;
+    width: 1000px;
+    margin: 0 30px 0 0 ;
+    padding-right:50px;
     text-align: center;
     display: block;
+    height:300px;
 }
 
 .distracted_text {
@@ -834,22 +855,21 @@ button {
 #my_slider .carousel-control-next:hover,
 #my_slider .carousel-control-prev:focus,
 #my_slider .carousel-control-next:focus {
-    background-color: #19e9d9;
+    background-color: #ef32f5;
     color: #ffffff;
 }
 
 #my_slider a.carousel-control-next {
     position: absolute;
-    left: 490px;
-    top: 70%;
-    background-color: #19e9d9;
+    right: 490px;
+    background-color: #ef32f5;
     color: #ffffff;
 }
 
 #my_slider a.carousel-control-prev {
     position: absolute;
     left: 490px;
-    top: 84%;
+ 
     background-color: #252525;
 }
 
