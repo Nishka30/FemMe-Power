@@ -107,21 +107,12 @@ body{
   }
 
 
-a{
-  color: white;
-  text-decoration: none;
-  padding-bottom: 10px;
-  padding-top:10px;
-}
-  a:hover{
-    text-decoration: underline;
-  }
 
 p{
   margin-top: 10px;
   float: left;
 }
-.loginButton{
+.loginButton {
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 18px;
