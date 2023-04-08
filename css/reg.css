@@ -16,7 +16,7 @@ body{
 .box{
   position: relative;
   width: 380px;
-  height: 530px;
+  height: 600px;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
@@ -27,7 +27,7 @@ body{
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 480px;
     background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -125,7 +125,7 @@ p{
   font-size: 18px;
   border-radius: 6px;
   margin-bottom: 10px;
-  width: 100px;
+  width: 100%;
   background:0;color:#5a5a6e;
   cursor:pointer;
   transition:all .3s;
