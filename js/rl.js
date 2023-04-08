@@ -37,7 +37,7 @@
             let request = {
                 location: place.geometry.location,
                 radius: '500',
-                type: ['atm']
+                type: ['lodging']
             }
 
             service = new google.maps.places.PlacesService(map)
