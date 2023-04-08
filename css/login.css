@@ -32,7 +32,9 @@ body{
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     }
-  
+  .i-b{
+    margin-top: 20px;
+  }
   .box:after{ 
     content: "";
     position: absolute;
@@ -71,7 +73,7 @@ body{
     }
 .inputBox{
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   margin-top: 10%;
   color: #45f3ff;
   height: 45px;
