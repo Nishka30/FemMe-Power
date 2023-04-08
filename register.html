@@ -5,30 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignIn</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main>
-        <h2>SIGNUP FORM</h2>
+        <div class="box">
+            <div class="form">
+                <h2 style="font-size: 20px"><b>Register</b></h2>
         <form role="form" onsubmit="signUp(event);" autocomplete="off">
-            <div class="form-group">
+            <div class="inputBox">
                 <input type="text" name="fname" id="fname" placeholder="First Name" required>
             </div>
-            <div class="form-group">
+            <div class="inputBox">
                 <input type="text" name="lname" id="lname" placeholder="Last Name" required>
             </div>
-            <div class="form-group">
+            <div class="inputBox">
                 <input type="email" name="email" id="email" placeholder="Email Address" required>
             </div>
-            <div class="form-group">
+            <div class="inputBox">
                 <input type="password" name="pwd" id="pwd" placeholder="Password" required>
             </div>
-            <div class="form-group">
-                <button type="submit">Sign Up</button>
+            <div class="inputBox">
+                <button class="loginButton" type="submit">Sign Up</button>
             </div>
         </form>
-        <p>Already a member? <a href="index.html">Sign In</a></p>
-    </main>
+        <p >Already a member? <a href="index.html">Sign In</a></p>    
+    </div>
+    </div>
 
     <script type="text/javascript" src="js/login.js"></script
 </body>
