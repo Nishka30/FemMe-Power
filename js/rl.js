@@ -37,7 +37,7 @@
             let request = {
                 location: place.geometry.location,
                 radius: '500',
-                type: ['atm']
+                type: ['lodging']
             }
 
             service = new google.maps.places.PlacesService(map)
@@ -65,7 +65,7 @@
 
         google.maps.event.addListener(marker, 'click', function () {
             alert(place.name);
-            window.open(place.photos[0].getUrl(), "_blank");
+            window.open(place.direction.getUrl(), "_blank");
         });
     }
 
