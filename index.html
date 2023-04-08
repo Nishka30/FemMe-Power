@@ -9,7 +9,9 @@
 
 <body>
 
+ <div class="flex">
 <form>
+    
     <div class="box">
         <div class="form">
         <h1 style="text-align: center;">Enter Your Credentials</h1>
@@ -21,14 +23,14 @@
         <input type="password" placeholder="Password" name="psw" id="psw" required>
         </div>
         </div>
-
         <button class='loginButton' type="button" id="submitData" name="submitData" class="registerbtn">Submit</button>
+        <a href="pj.html" style="padding: 20px" class="p-a loginButton">Post A Job</a>
     </div>
 
         
 </div>
 </form>
-
+</div>
 </body>
 </html>
 
@@ -93,7 +95,7 @@
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 // ..
-                alert('User Not Found!');
+                alert('User Not');
             });
 
         // log in user
