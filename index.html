@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignIn</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
-        <div class="login-card">
-        <h2>SIGNIN FORM</h2>
+        <div class="box">
+            <div class="form">
+        <h2 style="font-size: 20px"><b>Login</b></h2>
         <form role="form" onsubmit="signIn(event);" autocomplete="off">
-            <div class="form-group">
+            <div class="inputBox">
+                <i class="fa fa-user"></i>
                 <input type="email" name="email" id="email" placeholder="Email Address" required>
             </div>
-            <div class="form-group">
+            <div class="inputBox">
+                <i  class="fa fa-lock"></i>
                 <input type="password" name="pwd" id="pwd" placeholder="Password" required>
             </div>
-            <div class="form-group">
-                <button type="submit">Sign In</button>
-            </div>
+            
+                <button class="loginButton" type="submit">Sign In</button>
         </form>
-        <p>Don't have an account? <a href="register.html">Sign Up</a> here</p>
-        </div>
-    </main>
+
+        <p style="z-index: 3">Don't have an account? <a href="register.html">Sign Up</a> here</p>
+    </div>
+    </div>
 
     <script type="text/javascript" src="js/login.js"></script>
+    
 </body>
 </html>
