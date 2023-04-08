@@ -575,11 +575,29 @@ button {
 .box_main {
     width: 100%;
     float: left;
-    background-color: #252525;
     height: auto;
     border-radius: 15px;
     padding: 40px;
+    background: linear-gradient(90deg, #481052, #9a5018);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+    
 }
+    
+    
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+  }
+
+    
 
 .box_main:hover {
     background-color: #f84acd;
@@ -606,10 +624,10 @@ button {
     display: block;
     color: #fff;
     line-height: 30px;
+    margin-left:15px;
 }
 
 .daily_text_1 {
-    width: 40%;
     margin: 0 auto;
     text-align: center;
     font-weight: bold;
@@ -617,7 +635,8 @@ button {
     display: block;
     color: #fff;
     line-height: 30px;
-    padding-bottom: 40px;
+
+   
 }
 
 .getquote_bt {
@@ -631,14 +650,16 @@ button {
     float: left;
     font-size: 18px;
     color: #ffffff;
-    background-color:#f84acd;
+    background-color:#7b2d17;
     padding: 7px 0px;
     text-align: center;
     margin-top: 50px;
+    border-radius: 5px;
 }
 
 .getquote_bt a:hover {
-    background-color: #252525;
+    background-color: #9f0b89;
+    color:white;
 }
 
 .contact_section {
