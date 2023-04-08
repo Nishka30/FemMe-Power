@@ -211,8 +211,9 @@ button {
 }
 
 .logo {
-    width: 85px;
+    width: 100px;
     float: left;
+    height:85px;
 }
 
 .bg-light {
@@ -258,10 +259,10 @@ button {
 .banner_taital {
     width: 100%;
     float: left;
-    font-size: 60px;
+    font-size: 50px;
     color: #e415bb;
     font-weight: bold;
-    line-height: 60px;
+    line-height: 55px;
 }
 
 .banner_text {
@@ -311,7 +312,7 @@ button {
 
 .contact_bt a:hover {
     color: #f6f8f8;
-    background-color: #4bc5b8;
+    background-color: #f84acd;
 }
 
 #main_slider .carousel-control-prev:hover,
@@ -476,7 +477,7 @@ button {
     float: left;
     font-size: 18px;
     color: #ffffff;
-    background-color: #1becde;
+    background-color: #f84acd;
     padding: 7px 0px;
     text-align: center;
 }
@@ -488,6 +489,7 @@ button {
 .knowledge_section {
     width: 100%;
     float: left;
+    background-image: url(../images/gif26.gif);
     background-size: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -580,11 +582,11 @@ button {
 }
 
 .box_main:hover {
-    background-color: #1becde;
+    background-color: #f84acd;
 }
 
 .box_main.active {
-    background-color: #1becde;
+    background-color:#f84acd;
 }
 
 .icon_1 {
@@ -629,7 +631,7 @@ button {
     float: left;
     font-size: 18px;
     color: #ffffff;
-    background-color: #1becde;
+    background-color:#f84acd;
     padding: 7px 0px;
     text-align: center;
     margin-top: 50px;
