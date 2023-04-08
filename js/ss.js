@@ -10,7 +10,7 @@ function initialize() {
         zoom: 15
     })
 
-    var input = document.getElementById('searchTextField1');
+    var input = document.getElementById('searchTextField');
 
     let autocomplete = new google.maps.places.Autocomplete(input)
 
@@ -65,7 +65,7 @@ function createMarker(place) {
 
     google.maps.event.addListener(marker, 'click', function () {
         alert(place.name);
-        window.open(place.photos[0].getUrl(), "_blank");
+        window.open(place.direction.getUrl(), "_blank");
     });
 }
 
