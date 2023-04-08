@@ -493,8 +493,8 @@ button {
     background-size: 100%;
     height: auto;
     background-repeat: no-repeat;
-    padding-top: 180px;
-    padding-bottom: 240px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .knowledge_main {
@@ -986,9 +986,6 @@ input.Enter_text::placeholder {
     color: #19e9d9;
 }
 
-.margin_90 {
-    margin: 90px 0px;
-}
 
 
 /* EXTRA CODES */

@@ -76,20 +76,22 @@ body{
   color: #45f3ff;
   height: 45px;
 }
-  i {
+i {
     position: absolute;
     width: 48x;
     height:100%;
+    transform: scale(2.0);
     color: #fff;
     font-size: 18px;
     display: flex;
+    top: 30px;
     justify-content: center;
     align-items: center;
   }
   input{
     width: 100%;
     height:100%;
-    padding-left: 60px;
+    padding-left: 30px;
     box-sizing:border-box;
     background:none;
     outline:none;
