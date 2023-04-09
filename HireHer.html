@@ -38,9 +38,6 @@
                      <a class="nav-link" href="FemEdify.html"><i class="far fa-address-book"></i>FemEdify</a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link" href="hercircle.html"><i class="far fa-clone"></i>HerCircle</a>
-                 </li>
-                 <li class="nav-item">
                      <a class="nav-link"  href="HerNewHome.html"><i class="far fa-calendar-alt"></i>HerNewHome</a>
                  </li>
                  <li class="nav-item">
@@ -67,7 +64,7 @@
                            <p style="color: aliceblue !important; margin-left: 34px;">Development</p>
                         </div>
                         <div class="actions">
-                           <button class="delete">Apply</button>
+                           <a style="padding: 30px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;" href="mailto:b.s.abhi152@gmail.com" target="_blank" class="delete">Apply</a>
                         </div>
                      </div>
                   </div>
@@ -79,10 +76,22 @@
                           <p style="color: aliceblue !important; margin-left: 34px;">Artificial Intelligence & Machine Learning</p>
                        </div>
                        <div class="actions">
-                          <button class="delete">Apply</button>
+                        <a style="padding: 30px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"href="mailto:b.s.abhi152@gmail.com" target="_blank" class="delete">Apply</a>
                        </div>
                     </div>
                  </div>
+
+                 <div id="tasks">
+                  <div class="task">
+                    <div class="content">
+                       <input type="text" class="text" value="Junior Chef" readonly>
+                       <p style="color: aliceblue !important; margin-left: 34px;">Cooking</p>
+                    </div>
+                    <div class="actions">
+                       <a style="padding: 30px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;"href="mailto:b.s.abhi152@gmail.com" target="_blank" class="delete">Apply</a>
+                    </div>
+                 </div>
+              </div>
                </section>
             </main>
             </div>
@@ -112,10 +121,7 @@
                   </div>
                      <div class="social_icon">
                         <ul>
-                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                           <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                           <div style="border-radius:5px; margin-left: 10px;" id="google_translate_element"></div>
                         </ul>
                      </div>
                   </div>
@@ -128,6 +134,12 @@
                <p class="copyright_text">2023 All Rights Reserved. Design by team HackElites</p>
             </div>
          </div>
+         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+            </script>
          
       
       <script src="js/jquery.min.js"></script>

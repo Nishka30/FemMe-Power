@@ -28,7 +28,24 @@ body {
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
+    background: linear-gradient(90deg, #a9e1ff, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 a {
     color: #1f1f1f;
@@ -235,7 +252,25 @@ button {
 .navbar {
     padding: .5rem 30px;
     background-color:#f9bc86 !important;
+    background: linear-gradient(90deg, #76f92f, #f9bc86);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+    
 }
+    
+    
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+  }
+
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #df85f6;
     
@@ -806,7 +841,16 @@ button {
     float: left;
     padding-bottom: 90px;
 }
-
+.help-1{
+    width:100%;
+    position: relative;
+}
+.h-22{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    
+}
 .client_taital {
     width: 100%;
     float: left;
