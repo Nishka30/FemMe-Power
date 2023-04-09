@@ -57,7 +57,52 @@
             <iframe style="border-radius: 10px;" width="100%" height="500" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c943f7a2-9e7a-4e49-9a53-7618df598844"></iframe>
          </div>
       </div>
-      
+      <div class="chat_icon">
+         <i class="fa fa-commenting" aria-hidden="true"></i>
+    </div>
+    
+    <div class="chat_box">
+         <div class="my-conv-form-wrapper"> 
+              <form action="" method="GET" ="hidden">
+    
+          <select data-conv-question="Hello! <br> I am the Owner of The Team NOOBS <br> How may I help you?" name="category">
+            <option value="a">Booking?</option>
+            <option value="b">Contact Details</option>
+          </select>
+    
+          <div data-conv-fork="category">
+            <div data-conv-case="a">
+              <input type="text" name="name" data-conv-question="Please, Enter your name">
+              <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+              <input type="text" name="total" data-conv-question="Total Number of People">
+              <input type="date" name="time" data-conv-question="Enter Date and Time">   
+              <select name="venue" data-conv-question="Hi {name}, Please Select the Venue.">
+                   <option value="Yes">Aerocity</option>
+                   <option value="Yes">Kolkata</option>
+                   <br>
+                   <option value="Yes">The Mills, Pune</option>
+                   <option value="Yes">North Delhi</option>
+                   <br>
+                   <option value="Yes">Pubjabi Bagh</option>
+                   </select>
+            </input>
+              <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">  
+              <select data-conv-question="Hi {name}, <br> Your Booking Has been Confirmed on {time} at {venue}.<br> Thank You!">
+                   <option value="Yes">Okay?</option>
+              </select>
+         </div>
+            <div data-conv-case="b" data-conv-fork="first-question2">
+              <input type="text" name="companyName" data-conv-question="Ph. NO - 9889909375 <br> E-mail - oneeightcommune@gmail.com <br> THANK YOU," > 
+                   <option value="Yes">OK</option>
+                 </select>
+         </div>
+          </div>
+    
+          
+    
+           </form>
+         </div>
+    </div>
       <div class="footer_section layout_padding">
          <div class="container">
             <div class="row">
