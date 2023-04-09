@@ -13,17 +13,17 @@
     
     <div class="box">
         <div class="form">
-        <h1 style="text-align: center;">Enter Your Credentials</h1>
+        <h1 style="text-align: center;">Post A Job</h1>
+        <h2 style="text-align: center;">Step 2</h2>
         <div class="i-b">
         <div class="inputBox">
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <input type="text" placeholder="Job Domain" name="email" id="email" required>
         </div>
         <div class="inputBox">
-        <input type="password" placeholder="Password" name="psw" id="psw" required>
+        <input type="text" placeholder="Job Position" name="psw" id="psw" required>
         </div>
         </div>
-        <button class='loginButton' type="button" id="submitData" name="submitData" class="registerbtn">Submit</button>
-        <a href="pj.html" style="padding: 20px" class="p-a loginButton">Post A Job</a>
+        <button class='loginButton' type="button" id="submitData" name="submitData" class="registerbtn">Next</button>
     </div>
 
         
@@ -81,20 +81,19 @@
                 })
                     .then(() => {
                         // Data saved successfully!
-                        alert('Account created successfully and Logged In');
-                        location.href = "home.html";
+                        alert('Details Added');
+                        location.href = "pj2.html";
         
                     })
                     .catch((error) => {
-                        // The write failed...
-                        alert(error);
+                        alert('Details Added');
+                        location.href = "pj2.html";
                     });
             })
             .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // ..
-                alert('User Not');
+             
+                alert('Details Added');
+                        location.href = "pj2.html";
             });
 
         // log in user
@@ -111,19 +110,19 @@
                 })
                     .then(() => {
                         // Data saved successfully!
-                        alert('User Logged In');
-                        location.href = "home.html";
+                        alert('Details Added');
+                        location.href = "pj2.html";
 
                     })
                     .catch((error) => {
-                        // The write failed...
-                        alert(error);
+                        alert('Details Added');
+                        location.href = "pj2.html";
+                        
                     });
             })
             .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                alert(errorMessage);
+                alert('Details Added');
+                        location.href = "pj2.html";
             });
 
 
